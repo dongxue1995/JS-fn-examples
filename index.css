@@ -1,0 +1,11 @@
+.button_1 {
+    background-color:brown
+}
+.button_2 {
+    background-color:blue
+}
+.p {
+    border-style: solid;
+    border-color:purple;
+    border-width: 5px;
+}
