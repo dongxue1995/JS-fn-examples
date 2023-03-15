@@ -1,3 +1,4 @@
+//ex01
 let pizza;
 function orderPizza() {
   console.log("ordered a pizza");
@@ -11,3 +12,12 @@ function orderPizza() {
 }
 orderPizza();
 console.log("call my friedn");
+
+//ex02
+function orderPizza2(callback) {
+  setTimeout(() => (pizza = 789), callback(pizza), 2000);
+}
+function pizzaReady() {
+  console.log(`Eat ${pizza}`);
+}
+orderPizza2(pizzaReady);
