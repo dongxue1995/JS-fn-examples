@@ -5,7 +5,7 @@ class Commnitment {
   constructor(fn) {
     this.status = Commnitment.pending; //set as default
     this.result = null;
-    fn(this.res, this.rej);
+    fn(this.res.bind(this), this.rej.bind(this));
   }
   res(result) {
     if (this.status === Commnitment.pending) {
